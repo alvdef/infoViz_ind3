@@ -1,0 +1,91 @@
+body { 
+    font-family: sans-serif; 
+    background-color: #f4f4f4; 
+    padding: 20px; 
+}
+
+/* Controles */
+.controls { 
+    margin-bottom: 20px; 
+    background: white; 
+    padding: 15px; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+}
+
+.label {
+    font-weight: bold; 
+    margin-right: 10px;
+}
+
+/* Botones */
+.filter-btn {
+    padding: 8px 16px; 
+    margin-right: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 20px; 
+    cursor: pointer; 
+    background: white; 
+    transition: all 0.3s;
+}
+.filter-btn:hover { 
+    background: #eee; 
+}
+.filter-btn.active { 
+    background: #333; 
+    color: white; 
+    border-color: #333; 
+}
+
+/* Contenedor gráfico */
+#scatterplot { 
+    background: white; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
+}
+
+/* Tooltip */
+.tooltip {
+    position: absolute; 
+    text-align: left; 
+    padding: 10px;
+    font: 12px sans-serif; 
+    background: rgba(0, 0, 0, 0.8); 
+    color: white;
+    border-radius: 4px; 
+    pointer-events: none; 
+    opacity: 0; 
+    transition: opacity 0.2s;
+}
+
+/* Contenedor flexible para centrar el SVG */
+#scatterplot {
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* El SVG no crecerá más de 800px, evitando que ocupe toda la pantalla gigante */
+svg {
+    max-width: 800px; 
+    height: auto;
+    background-color: white; /* Opcional: para ver bien los márgenes */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05); /* Toque elegante */
+    border-radius: 8px;
+}
+
+.tooltip {
+    position: absolute;
+    pointer-events: none;
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    font-size: 12px;
+    font-family: sans-serif;
+    opacity: 0;
+    transition: opacity 0.2s;
+}

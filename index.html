@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information Visualization: Individual task 3</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+    <div class="responsive-svg-container" id="form">
+        <h3>Temperature and humidity: how do they affect accidents?</h3>
+        <p>The chart exposes the relationship between weather conditions and traffic accidets. The size of each bubble represents the frequency of accidents, while darker red tones indicate a higher severity risk in those conditions.</p>
+
+        <p>Filter by weather condition to see how pressure and temperature affect accidents.</p>
+        
+        <div class="controls">
+            <button class="filter-btn active" value="all">All conditions</button>
+            <button class="filter-btn" value="isRain">Rain / Storm</button>
+            <button class="filter-btn" value="isSnow">Snow / Ice</button>
+            <button class="filter-btn" value="isFog">Fog / Mist</button>
+            <button class="filter-btn" value="isClear">Clear sky</button>
+            <button class="filter-btn" value="isCloud">Cloudy</button>
+        </div>
+    </div>
+
+    <div id="scatterplot" class="responsive-svg-container"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="./script.js"></script>
+</body>
+</html>l
