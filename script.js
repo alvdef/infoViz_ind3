@@ -52,8 +52,8 @@ const createBubblePlot = (rawData, colorScale) => {
         .attr("y1", yScale(10)).attr("y2", yScale(10))
         .attr("stroke", "#ddd").attr("stroke-dasharray", "4,4");
 
-    g.append("text").attr("x", xScale(25)).attr("y", yScale(-10)).text("DRY & COLD").style("fill", "#bbb").style("font-size", "10px");
-    g.append("text").attr("x", xScale(75)).attr("y", yScale(-10)).text("HUMID & COLD").style("fill", "#bbb").style("font-size", "10px");
+    g.append("text").attr("x", xScale(25)).attr("y", yScale(-20)).text("DRY & COLD").style("fill", "#bbb").style("font-size", "10px");
+    g.append("text").attr("x", xScale(75)).attr("y", yScale(-20)).text("HUMID & COLD").style("fill", "#bbb").style("font-size", "10px");
     g.append("text").attr("x", xScale(25)).attr("y", yScale(40)).text("DRY & HOT").style("fill", "#bbb").style("font-size", "10px");
     g.append("text").attr("x", xScale(75)).attr("y", yScale(40)).text("HUMID & HOT").style("fill", "#bbb").style("font-size", "10px");
 
